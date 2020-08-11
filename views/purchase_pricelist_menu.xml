@@ -1,0 +1,16 @@
+<odoo>
+    <record id="purchase_pricelist_action" model="ir.actions.act_window">
+        <field name="name">Purchase Pricelists</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">purchase.pricelist</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="context">{'visible_product_tmpl_id':False}</field>
+    </record>
+
+    <menuitem
+        action="purchase_pricelist_action"
+        id="menu_purchase_pricelist"
+        parent="purchase.menu_purchase_config"
+        sequence="1"
+    />
+</odoo>

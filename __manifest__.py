@@ -24,5 +24,6 @@
     # always loaded
     'data': [
         'views/views.xml',
+        'views/purchase_pricelist_menu.xml',
     ],
 }
