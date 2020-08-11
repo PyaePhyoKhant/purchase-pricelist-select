@@ -11,6 +11,6 @@
         action="purchase_pricelist_action"
         id="menu_purchase_pricelist"
         parent="purchase.menu_purchase_config"
-        sequence="1"
+        sequence="0"
     />
 </odoo>
