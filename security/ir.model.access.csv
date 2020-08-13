@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_pricelist_user,purchase.pricelist.user,model_purchase_pricelist,purchase.group_purchase_user,1,0,0,0
+access_purchase_pricelist_item_user,purchase.pricelist.item.user,model_purchase_pricelist_item,purchase.group_purchase_user,1,0,0,0
+access_purchase_pricelist_manager,purchase.pricelist.manager,model_purchase_pricelist,purchase.group_purchase_manager,1,1,1,1
+access_purchase_pricelist_item_manager,purchase.pricelist.item.manager,model_purchase_pricelist_item,purchase.group_purchase_manager,1,1,1,1

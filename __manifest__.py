@@ -23,6 +23,7 @@
 
     # always loaded
     'data': [
+        'security/ir.model.access.csv',
         'views/purchase_order_form_inherit.xml',
         'views/purchase_pricelist_menu.xml',
         'views/purchase_pricelist_views.xml',
