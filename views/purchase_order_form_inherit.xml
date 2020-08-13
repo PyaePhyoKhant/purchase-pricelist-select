@@ -5,7 +5,7 @@
         <field name="inherit_id" ref="purchase.purchase_order_form"/>
         <field name="arch" type="xml">
             <field name="date_order" position="after">
-                <field name="vendor_pl_id"/>
+                <field name="purchase_pl_id" options="{'no_open':True,'no_create': True}"/>
             </field>
         </field>
     </record>

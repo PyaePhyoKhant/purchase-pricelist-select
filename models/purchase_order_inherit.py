@@ -4,7 +4,7 @@ from odoo import api, fields, models
 class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'
 
-    vendor_pl_id = fields.Many2one('purchase.pricelist', 'Pricelist')
+    purchase_pl_id = fields.Many2one('purchase.pricelist', 'Pricelist', required=True)
 
 
 class PurchaseOrderLine(models.Model):
@@ -21,9 +21,9 @@ class PurchaseOrderLine(models.Model):
             super()._onchange_quantity()
 
             # search by variant first and then if not found by template
-            price_list_item = self.order_id.vendor_pl_id.item_ids.filtered(lambda x: x.product_id == self.product_id)
+            price_list_item = self.order_id.purchase_pl_id.item_ids.filtered(lambda x: x.product_id == self.product_id)
             if not price_list_item:
-                price_list_item = self.order_id.vendor_pl_id.item_ids.filtered(lambda x: x.product_tmpl_id == self.product_id.product_tmpl_id)
+                price_list_item = self.order_id.purchase_pl_id.item_ids.filtered(lambda x: x.product_tmpl_id == self.product_id.product_tmpl_id)
 
             if price_list_item:
                 self.price_unit = price_list_item.fixed_price
