@@ -6,7 +6,11 @@
         Manually select pricelist in purchase form""",
 
     'description': """
-        Manually select pricelist in purchase form
+        Manually select pricelist in purchase form. 
+        The same pricelist workflow as in sale pricelist. 
+        Define purchase pricelist at Purchase/Configuration.
+        If product is in purchase pricelist, that product price will be used.
+        Otherwise, vendor pricelsit is used. 
     """,
 
     'author': "Pyae Phyo Khant",
